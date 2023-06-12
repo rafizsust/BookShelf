@@ -1,0 +1,326 @@
+/* Variables */
+
+/* Selectors */
+
+.App {
+  text-align: center;
+}
+
+.Logo {
+  width: 50%;
+  height: 50%;
+  border-radius: 40%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #f2f2f2;
+}
+
+.navbar-logo a {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-left: 1rem;
+}
+
+.navbar-link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-link:hover {
+  color: #888;
+}
+
+.Login,
+.inputs,
+.Signup,
+.addBook,
+.Borrow,
+.update-book {
+  margin-left: 35%;
+  margin-top: 10%;
+}
+
+.inputs,
+.inputBox {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  border: 2px solid gray;
+}
+
+.book-list {
+  text-align: center;
+  margin-top: 0;
+}
+
+.book-list ul li {
+  display: inline-block;
+  border: 1px solid #1d1d1f;
+  padding: 5px;
+  width: 150px;
+}
+
+.returnInfo {
+  display: inline-block;
+  border: none;
+  padding: 10px;
+  width: 80%;
+  color: #791819;
+  font-size: small;
+  font-weight: 500;
+}
+
+.book-list ul {
+  margin: 0;
+}
+
+.search-book-box {
+  font-variant: JIS04;
+  text-align: center;
+  width: 400px;
+  margin-top: 20px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 0;
+}
+
+.signUpButton,
+.appButton {
+  padding: 10px;
+  margin: 30px;
+  width: 200px;
+  background-color: #1e1e1f;
+  color: #fff;
+  font-size: medium;
+}
+
+.pagination-button {
+  padding: 0;
+  margin: 2px;
+  width: 30px;
+  height: 30px;
+  color: #1e1e1f;
+  background-color: #9c9c9c;
+  font-size: medium;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.pagination-button.active {
+  background-color: white;
+  color: black;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.book-list {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info,
+.social-media {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.contact-item,
+.social-media a {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.footer-text {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  th,
+  td {
+    padding: 6px;
+  }
+
+  .table-container {
+    overflow-x: scroll;
+  }
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.delete-button,
+.update-button,
+.return-button {
+  padding: 4px 8px;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.borrow-button {
+  padding: 6px 8px;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.delete-button {
+  background-color: #b22222;
+  color: rgb(200, 200, 200);
+  font-weight: 500;
+}
+
+.update-button {
+  background-color: #e7b52c;
+  color: #1d1d1f;
+}
+
+.update-button:hover {
+  background-color: #a17702;
+}
+
+.borrow-button {
+  background-color: #09b928de;
+  color: #1d1d1f;
+}
+
+.borrow-button:hover {
+  background-color: darkgreen;
+}
+
+.return-button {
+  background-color: #a19f01;
+  color: #000000;
+}
+
+.return-button:hover {
+  background-color: #696802;
+}
+
+.dropdown-container {
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  border: 2px solid gray;
+}
+
+label {
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.genre-container {
+  display: flex;
+  float: right;
+}
+
+.pagination-filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
